@@ -1,5 +1,5 @@
 {
-  "name": "20-react-portfolio",
+  "name": "20-port-2",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://vulpesviator.github.io/20-react-portfolio",
@@ -7,7 +7,6 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "bootstrap": "^5.3.1",
     "gh-pages": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
