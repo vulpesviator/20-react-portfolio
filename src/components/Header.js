@@ -1,16 +1,15 @@
 import React from "react";
 import Navigation from "./Navigation";
+import Logo from "../assets/logo.svg"
 
-export default function Header() {
+export default function Header(currentPage, setCurrentPage) {
     return (
         <header>
         <div class="logo">
-            <div>
-                <img src="/assets/logo.svg" alt="Travis Hoffman Logo" />
-            </div>
+            {/* <Logo /> */}
             <h1>Travis Hoffman</h1>
         </div>
-        <Navigation />
+        <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
     </header>
     );
 }
