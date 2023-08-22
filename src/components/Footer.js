@@ -1,6 +1,11 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
-import { LinkedIn, GitHub, Twitter, Email } from "@mui/icons-material";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import EmailIcon from "@mui/icons-material/Email";
+
+
 
 export default function Footer() {
   return (
@@ -16,7 +21,7 @@ export default function Footer() {
             item
             xs={4}
           >
-            <LinkedIn
+            <LinkedInIcon
               id="icon"
               className="pop-on-hover"
               sx={{ fontSize: 50 }}
@@ -25,7 +30,7 @@ export default function Footer() {
                   "https://www.linkedin.com/in/travdoeswhat/")
               }
             />
-            <GitHub
+            <GitHubIcon
               id="icon"
               className="pop-on-hover"
               sx={{ fontSize: 50 }}
@@ -33,7 +38,7 @@ export default function Footer() {
                 (window.location.href = "https://github.com/vulpesviator")
               }
             />
-            <Twitter
+            <TwitterIcon
               id="icon"
               className="pop-on-hover"
               sx={{ fontSize: 50 }}
@@ -41,7 +46,7 @@ export default function Footer() {
                 (window.location.href = "https://twitter.com/travdoeswhat")
               }
             />
-            <Email
+            <EmailIcon
               id="icon"
               className="pop-on-hover"
               sx={{ fontSize: 50 }}
