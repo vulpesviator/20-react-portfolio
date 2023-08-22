@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import './App.css';
 import Container from "./components/Container";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { useState } from "react";
 
 
 
@@ -14,6 +13,7 @@ function App() {
     <div className="App">
       <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
       <Container currentPage={currentPage} setCurrentPage={setCurrentPage} />
+      <Footer />
     </div>
   );
 }
