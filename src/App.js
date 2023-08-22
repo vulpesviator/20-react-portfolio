@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
-      
+      <Container currentPage={currentPage} setCurrentPage={setCurrentPage} />
     </div>
   );
 }
