@@ -6,7 +6,7 @@ export default function Header(currentPage, setCurrentPage) {
     return (
         <header>
         <div class="logo">
-            {/* <Logo /> */}
+            <img src={Logo} alt="Travis Hoffman Logo" />
             <h1>Travis Hoffman</h1>
         </div>
         <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
