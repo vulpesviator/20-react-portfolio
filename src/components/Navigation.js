@@ -1,7 +1,5 @@
 import React from "react";
 
-const pages = ["About", "Portfolio", "Contact", "Resume"];
-
 export default function Navigation(currentPage, setCurrentPage) {
     return (
       <nav>
