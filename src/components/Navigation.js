@@ -39,7 +39,7 @@ export default function Navigation(currentPage, setCurrentPage) {
                 currentPage === "Contact" ? "nav-link active" : "nav-link"
               }
             >
-              Work
+              Contact
             </a>
           </li>
           <li>
@@ -51,7 +51,7 @@ export default function Navigation(currentPage, setCurrentPage) {
                 currentPage === "Resume" ? "nav-link active" : "nav-link"
               }
             >
-              Work
+              Resume
             </a>
           </li>
         </ul>
