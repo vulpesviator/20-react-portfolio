@@ -1,22 +1,8 @@
-import React, { useState } from "react";
-import { Grid, Card, Button, Typography } from "@mui/material";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
+import React from "react";
 import { works } from "../Work";
 import '../../styles/Portfolio.css';
 
-/* const styles = {
-  grid: {
-    display: "flex", 
-    justifyContent: "center"
-  },
-  content: {
-    paddingLeft: "50px", 
-    paddingRight: "50px"
-  }
-}
- */
+
 export function Project({ work }) {
     const projectStyles = {
       background: `url(${work.imageUrl})`,
