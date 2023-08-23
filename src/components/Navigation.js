@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Navigation(currentPage, setCurrentPage) {
+export default function Navigation({ currentPage, setCurrentPage }) {
     return (
       <nav>
         <ul>
