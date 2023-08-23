@@ -1,6 +1,7 @@
 import React from "react";
 import Navigation from "./Navigation";
 import Logo from "../assets/logo.svg"
+import "../styles/Header.css";
 
 export default function Header({ currentPage, setCurrentPage }) {
     return (

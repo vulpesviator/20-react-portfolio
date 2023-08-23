@@ -14,7 +14,7 @@ export default function Footer() {
         <Grid
           style={{ display: "flex", justifyContent: "center" }}
           container
-          sx={{ color: "text.primary" }}
+          sx={{ color: "text.gray" }}
         >
           <Grid
             style={{ display: "flex", justifyContent: "space-evenly" }}

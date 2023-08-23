@@ -6,64 +6,59 @@
     --darkorange: #af520a;
 }
 
-div#project {
-    display: flex;
-    height: 23vh;
-    background-image: url(../assets/zen-4-you.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  
-  #project:hover {
-    filter: blur(4px);
-  }
-  
-  #projTitle {
-    display: hidden !important;
-  }
-  
-  #portfolio-button {
-    background-color: var(--orange);
-    color: var(--white);
-  }
-  
-  #portfolio-button:hover {
-    background-color: var(--darkorange);
-    color: var(--white);
-  }
-  
-  @-webkit-keyframes pop-on-hover {
-    50% {
-      -webkit-transform: scale(1.2);
-      transform: scale(1.2);
-    }
-  }
-  
-  @keyframes pop-on-hover {
-    50% {
-      -webkit-transform: scale(1.2);
-      transform: scale(1.2);
-    }
-  }
-  
-  .pop-on-hover {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  }
-  
-  .pop-on-hover:hover,
-  .pop-on-hover:focus,
-  .pop-on-hover:active {
-    -webkit-animation-name: pop-on-hover;
-    animation-name: pop-on-hover;
-    -webkit-animation-duration: 0.3s;
-    animation-duration: 0.3s;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-  }
-  
+#works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#project {
+  position: relative;
+  flex: 1 0 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em;
+  margin: 0.5em;
+  transition: .5s;
+}
+
+#project:hover {
+  transform: scale(102%);
+  border: 2px dashed var(--white);
+}
+
+#project:hover .description {
+  background: var(--white);
+  border-bottom: #01B6D4 solid 4px;
+  box-shadow: var(--black) 2px 2px 4px;
+}
+
+#project:hover .description h2 {
+  color: var(--black);
+}
+
+#project:hover .description p {
+  color: var(--black);
+}
+
+.description {
+  position: absolute;
+  display: inline-block;
+  right: 40px;
+  bottom: 6px;
+  padding: 24px;
+  background: var(--black);
+}
+
+.description h2 {
+  color: var(--white);
+
+}
+
+.description p {
+  font-family: 'Interstate', monospace;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--white);
+}
