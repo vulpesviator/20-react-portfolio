@@ -1,4 +1,38 @@
+@font-face {
+  font-family: "Interstate";
+  src: url(./assets/fonts/Interstate\ Cond\ Mono.ttf) format('truetype');
+  font-weight: 400;
+}
 
+@font-face {
+  font-family: "Interstate";
+  src: url(./assets/fonts/Interstate\ Cond\ Mono\ -\ Blk.ttf) format('truetype');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Avant Garde";
+  src: url(./assets/fonts/AvantGardeBQ-Bold.otf) format('opentype');
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: "Avant Garde";
+  src: url(./assets/fonts/AvantGardeBQ-Book.otf) format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Avant Garde";
+  src: url(./assets/fonts/AvantGardeBQ-ExtraLight.otf) format('opentype');
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "Avant Garde";
+  src: url(./assets/fonts/AvantGardeBQ-Medium.otf) format('opentype');
+  font-weight: bold;
+}
 
 /* Styles begin for Content */
 :root {
@@ -9,6 +43,8 @@
 }
 
 * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   box-sizing: content-box;
   font-family: "Avant Garde", Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -74,6 +110,17 @@ footer p {
   flex-direction: row;
   padding: .5em;
   margin: 1em;
+}
+
+#cv {
+  position: relative;
+  flex: 1 0 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em;
+  margin: 0.5em;
+  transition: .5s;
 }
 
 #contact-info {
