@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { TextField, Button, MenuItem } from "@mui/material";
+import { TextField, Button, MenuItem, Card } from "@mui/material";
 import Stack from "@mui/material/Stack";
 
 export default function Contact() {
@@ -61,7 +61,7 @@ export default function Contact() {
       };
   
     return (
-    <>
+    <Card variant="outlined">
       <form style={{ display: "flex", justifyContent: "center" }}>
         <Stack spacing={2}>
           <MenuItem>
@@ -123,6 +123,6 @@ export default function Contact() {
           </MenuItem>
         </Stack>
       </form>
-    </>
+    </Card>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Box, Button, Typography } from "@mui/material";
 import { works } from "../Work";
 import '../../styles/Portfolio.css';
 
@@ -22,37 +23,38 @@ export function Project({ work }) {
     }
   
     return (
-      <>
-        <article id="project">
-          <div class="description">
-            <h2>{work.title}</h2>
-            <p>{work.description}</p>
-            <a
-              href="{work.git}"
-              target="_blank"
-            >Git Repo</a>
-          </div>
-          <div style={projectStyles}>
-            <a
-              href="{work.deploy}"
-              target="_blank"
-              style={projectLinkStyles}
-            ></a>
-          </div>
-        </article>
-
-      </>
+      <Box id="project">
+      <div className="description">
+        <Typography variant="h2">{work.title}</Typography>
+        <Typography variant="body1">{work.description}</Typography>
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={() => window.open(work.git, "_blank")}
+        >
+          Git Repo
+        </Button>
+        <Button
+          variant="contained"
+          color="secondary"
+          onClick={() => window.open(work.deployUrl, "_blank")}
+        >
+          Live Demo
+        </Button>
+      </div>
+      <div style={projectStyles}>
+        <a href={work.deployUrl} target="_blank" style={projectLinkStyles}></a>
+      </div>
+    </Box>
     );
 }
 
 export default function Portfolio() {
     return (
-      <>
       <div id="works">
-        {works.map((work, index) => (
-            <Project work={work} key={index} />
-          ))}
-      </div>
-      </>
+      {works.map((work, index) => (
+        <Project work={work} key={index} />
+      ))}
+    </div>
     );
 }
