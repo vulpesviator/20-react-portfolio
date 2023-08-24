@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/20-react-portfolio/static/css/main.7ee159c2.css",
+    "main.js": "/20-react-portfolio/static/js/main.778edd40.js",
+    "static/js/787.4dba410b.chunk.js": "/20-react-portfolio/static/js/787.4dba410b.chunk.js",
+    "static/media/travis_hoffman_resume.pdf": "/20-react-portfolio/static/media/travis_hoffman_resume.7abc6eeacb45a639c2ef.pdf",
+    "static/media/Interstate Cond Mono.ttf": "/20-react-portfolio/static/media/Interstate Cond Mono.ad10b477bc956212ddee.ttf",
+    "static/media/Interstate Cond Mono - Blk.ttf": "/20-react-portfolio/static/media/Interstate Cond Mono - Blk.66a5da9d55a5817cd569.ttf",
+    "static/media/travis.jpg": "/20-react-portfolio/static/media/travis.a68173bfdade7dd3e13e.jpg",
+    "static/media/AvantGardeBQ-ExtraLight.otf": "/20-react-portfolio/static/media/AvantGardeBQ-ExtraLight.101ccf7a548dce721b4f.otf",
+    "static/media/AvantGardeBQ-Book.otf": "/20-react-portfolio/static/media/AvantGardeBQ-Book.5956a7c4af8dc50c31a8.otf",
+    "static/media/AvantGardeBQ-Bold.otf": "/20-react-portfolio/static/media/AvantGardeBQ-Bold.3ee20bb073056de0cb8b.otf",
+    "static/media/AvantGardeBQ-Medium.otf": "/20-react-portfolio/static/media/AvantGardeBQ-Medium.e22f2afa2b9c06295a8d.otf",
+    "static/media/logo.svg": "/20-react-portfolio/static/media/logo.6753688b6988b54e2b3670c897247280.svg",
+    "index.html": "/20-react-portfolio/index.html",
+    "main.7ee159c2.css.map": "/20-react-portfolio/static/css/main.7ee159c2.css.map",
+    "main.778edd40.js.map": "/20-react-portfolio/static/js/main.778edd40.js.map",
+    "787.4dba410b.chunk.js.map": "/20-react-portfolio/static/js/787.4dba410b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ee159c2.css",
+    "static/js/main.778edd40.js"
+  ]
+}
