@@ -1,9 +1,10 @@
 
+
 export const works = [
     {
         title: "Zen 4 You",
         description: "Motivational Poster Generator",
-        imageUrl: "../assets/zen-4-you.jpg",
+        imageUrl: "https://user-images.githubusercontent.com/123843930/263004796-7eeee326-2ebb-4cb9-bd99-7359007c043d.jpg",
         deployUrl: "https://project01team03.github.io/Zen4You/",
         git: "https://github.com/vulpesviator/Zen4You",
     },

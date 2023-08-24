@@ -61,7 +61,7 @@ export default function Contact() {
       };
   
     return (
-    <Card variant="outlined">
+    <Card variant="outlined" id="contact-info">
       <form style={{ display: "flex", justifyContent: "center" }}>
         <Stack spacing={2}>
           <MenuItem>
@@ -74,7 +74,7 @@ export default function Contact() {
               name="name"
               type="text"
               variant="outlined"
-              style={{ backgroundColor: "floralwhite" }}
+              style={{ backgroundColor: "rgb(157, 168, 183)" }}
             />
           </MenuItem>
           <MenuItem>
@@ -88,7 +88,7 @@ export default function Contact() {
               name="email"
               type="email"
               variant="outlined"
-              style={{ backgroundColor: "floralwhite" }}
+              style={{ backgroundColor: "rgb(157, 168, 183)" }}
             />
           </MenuItem>
           <MenuItem>
@@ -102,7 +102,7 @@ export default function Contact() {
               name="message"
               type="text"
               variant="outlined"
-              style={{ backgroundColor: "floralwhite" }}
+              style={{ backgroundColor: "rgb(157, 168, 183)" }}
               placeholder="Type your message here!"
             />
           </MenuItem>

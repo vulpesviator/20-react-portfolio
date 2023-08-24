@@ -13,7 +13,7 @@ export default function Resume() {
         >
           {resumeData.name}
         </Typography>
-        <Typography variant="subtitle1">
+        <Typography variant="h4">
           <a href={resumeData.email} target="_blank" rel="noopener noreferrer">
             {resumeData.email}
           </a>
