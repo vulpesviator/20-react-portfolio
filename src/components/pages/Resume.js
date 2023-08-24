@@ -13,7 +13,7 @@ export default function Resume() {
         >
           {resumeData.name}
         </Typography>
-        <Typography variant="subtitle1">
+        <Typography variant="h4">
           <a href={resumeData.email} target="_blank" rel="noopener noreferrer">
             {resumeData.email}
           </a>
@@ -30,7 +30,7 @@ export default function Resume() {
         <Typography variant="body2" style={{ marginTop: "12px" }}>
           {resumeData.about}
         </Typography>
-        <Typography variant="h5" style={{ marginTop: "20px" }}>
+        {/* <Typography variant="h5" style={{ marginTop: "20px" }}>
           Experience
         </Typography>
         <List style={{ padding: "0" }}>
@@ -75,7 +75,7 @@ export default function Resume() {
           {resumeData.skills.map((skill, index) => (
             <ListItem key={index}>{skill}</ListItem>
           ))}
-        </List>
+        </List> */}
         <Button
           variant="contained"
           color="primary"

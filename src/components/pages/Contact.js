@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { TextField, Button, MenuItem, Card } from "@mui/material";
+import { Box, TextField, Button, MenuItem, Card } from "@mui/material";
 import Stack from "@mui/material/Stack";
 
 export default function Contact() {
@@ -59,10 +59,23 @@ export default function Contact() {
           setErrorMessage(``);
         }
       };
+
+      const handleFormSubmit = (e) => {
+        e.preventDefault();
+
+        const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLScwxqbxIxxI2HOc79Ph2iGwU3V0MZ9dt4_MMYdpmFHUGAzoZQ/formResponse";
+
+        window.open(formUrl, "_blank");
+      }
   
     return (
-    <Card variant="outlined">
-      <form style={{ display: "flex", justifyContent: "center" }}>
+    <Box sx={{ width: "80%", alignItems: "center", justifyContent: "center" }}>
+    <Card variant="outlined" id="contact-info">
+      <form 
+      style={{ display: "flex", justifyContent: "center" }}
+      action="#"
+      method="POST"
+      onSubmit={handleFormSubmit}>
         <Stack spacing={2}>
           <MenuItem>
             <TextField
@@ -71,10 +84,10 @@ export default function Contact() {
               id="outlined-basic"
               fullWidth
               label="Name"
-              name="name"
+              name="Name"
               type="text"
               variant="outlined"
-              style={{ backgroundColor: "floralwhite" }}
+              style={{ backgroundColor: "rgb(157, 168, 183)" }}
             />
           </MenuItem>
           <MenuItem>
@@ -85,10 +98,10 @@ export default function Contact() {
               id="outlined-basic"
               fullWidth
               label="Email Address"
-              name="email"
+              name="Email"
               type="email"
               variant="outlined"
-              style={{ backgroundColor: "floralwhite" }}
+              style={{ backgroundColor: "rgb(157, 168, 183)" }}
             />
           </MenuItem>
           <MenuItem>
@@ -99,15 +112,15 @@ export default function Contact() {
               cols="40"
               id="outlined-basic"
               label="Message"
-              name="message"
+              name="Message"
               type="text"
               variant="outlined"
-              style={{ backgroundColor: "floralwhite" }}
+              style={{ backgroundColor: "rgb(157, 168, 183)" }}
               placeholder="Type your message here!"
             />
           </MenuItem>
           {errorMessage && (
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div style={{ display: "flex", justifyContent: "center", color: "red" }}>
               <p className="error-text">{errorMessage}</p>
             </div>
           )}
@@ -117,6 +130,7 @@ export default function Contact() {
               className="pop-on-hover"
               xs={{ width: "100%" }}
               variant="contained"
+              type="submit"
             >
               Submit
             </Button>
@@ -124,5 +138,6 @@ export default function Contact() {
         </Stack>
       </form>
     </Card>
+    </Box>
   );
 }
