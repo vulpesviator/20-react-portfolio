@@ -229,5 +229,182 @@ transition: .5s;
       background-repeat: repeat;
   }
   
+  header {
+      flex-direction: column;
+      padding: 1.5em;
+      border: 2px dashed var(--black);
+  }
 
+  header .logo svg {
+      filter: invert(0);
+  }
+
+  h1 {
+      color: var(--black);
+  }
+
+  h3 {
+      color: var(--black);
+      border-bottom: 2px dashed var(--black);
+  }
+
+  main {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  nav {
+      display: flex;
+      flex: 1 0 100%;
+      margin: 2em;
+      
+  }
+
+  nav ul {
+      min-width: 2em;
+  }
+
+  nav li a {
+      color: var(--black);
+      padding: 1.25em;
+  }
+
+  aside {
+      order: 2;
+  }
+
+  header .logo {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+  }
+
+  #contact-info ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 2em;
+  }
+
+  #contact-info li div {
+      border: 2px dashed var(--orange);
+  }
+
+  #contact-info a {
+      width: 100%;
+      color: var(--orange);
+  }
+
+  #contact-info a svg {
+      fill: var(--orange);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .icon {
+      width: 3em;
+      max-width: 400px;
+      max-height: 400px;
+      margin-right: .6em;
+  }
+
+  .project {
+      flex: 2 1 100%;
+  }
+
+  .description {
+      right: 18px;
+      bottom: 6px;
+      padding: 24px;
+      background: var(--white);
+  }
+  
+  .description h2 {
+      color: var(--black);
+  
+  }
+  
+  .description p {
+      color: var(--black);
+  }
+
+  .avatar img {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .bio p {
+      color: var(--black);
+      font-size: 1em;
+      font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  * {
+      font-size: 12px;
+  }
+  
+  header {
+      flex-direction: column;
+  }
+
+  header .logo svg {
+      max-width: 120px;
+      max-height: 120px;
+  }
+
+  h3 {
+      text-align: right;
+  }
+
+  nav ul {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  nav ul a {
+      padding: .25em;
+      letter-spacing: .1em;
+  }
+
+  nav li:not(:last-child) {
+      border-right: 1px solid var(--black);
+      padding: 0 8px;
+  }
+
+  main {
+      flex-direction: column;
+  }
+
+  aside {
+      order: 2;
+  }
+
+  #contact-info ul {
+      flex-direction: column;
+  }
+
+  #about-me {
+      position: relative;
+      flex-direction: column;
+  }
+
+  #project {
+      width: 100%;
+      flex: 2 1 100%;
+  }
+
+  .avatar img {
+      position: absolute;
+      top: 1em;
+      left: 0;
+      margin: 0 0 0 1em;
+      max-width: 180px;
+  }
+
+  .bio {
+      margin-top: 8em;
+  }
 }
