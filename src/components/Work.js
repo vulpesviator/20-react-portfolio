@@ -2,6 +2,13 @@
 
 export const works = [
     {
+        title: "Deco",
+        description: "Art-style Quiz",
+        imageUrl: "https://user-images.githubusercontent.com/123843930/268789555-ef0596d5-ebfe-4db9-bfef-fb153a1a2e4c.png",
+        deployUrl: "https://project01team03.github.io/Zen4You/",
+        git: "https://github.com/Project03Team01/deco",
+    },
+    {
         title: "Zen 4 You",
         description: "Motivational Poster Generator",
         imageUrl: "https://user-images.githubusercontent.com/123843930/263004796-7eeee326-2ebb-4cb9-bd99-7359007c043d.jpg",
