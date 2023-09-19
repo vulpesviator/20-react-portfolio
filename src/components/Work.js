@@ -5,7 +5,7 @@ export const works = [
         title: "Deco",
         description: "Art-style Quiz",
         imageUrl: "https://user-images.githubusercontent.com/123843930/268789555-ef0596d5-ebfe-4db9-bfef-fb153a1a2e4c.png",
-        deployUrl: "https://project01team03.github.io/Zen4You/",
+        deployUrl: "https://deco-app-f64152d80c15.herokuapp.com/",
         git: "https://github.com/Project03Team01/deco",
     },
     {
